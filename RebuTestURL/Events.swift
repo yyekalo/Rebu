@@ -23,12 +23,26 @@ class Events {
                 
                 
                     
-                    for location in locations as! [AnyObject] {
+                    for location in locations {
+                        var longtiude : Double = 11
+                        var latitude :Double = 11
                         
-                        print(location["latitude"] as! Double)
+                        if let lo = location["longtiude"] as? Double
+                        {
+                            longtiude = lo
+                        }
                         
+                        }
+                        if let la = location["latitude"] as? Double{
+                            latitude = la
+                        }
                 
-                
+                print(longtiude)
+                print(latitude)
+                        
+//                        
+//                       Events.append( Event(name: "HH", startDate: "HH" , endDate: "HH", longtiude: longtiude, latitude: latitude ))
+//                
                 }
         }
         }

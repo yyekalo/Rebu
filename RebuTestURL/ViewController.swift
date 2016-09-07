@@ -12,11 +12,14 @@ class ViewController: UIViewController {
     
     var temp : String!
     
+    var events = Events()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.TextField.text = "hhhleo"
+      
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,12 +27,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet var TextField: UITextField!
+   
+    @IBOutlet var TextField: UITextView!
     
     
     @IBAction func Run(sender: UIButton) {
         
-       var  event = Events()
+      
         
       
 
@@ -39,8 +43,10 @@ class ViewController: UIViewController {
  
     @IBAction func SecondRun(sender: UIButton) {
        
-        
-       
+        for event in events.Events{
+            
+            self.TextField.text = self.TextField.text + String(event.longtiude) + "What"
+        }
         
         
     }
