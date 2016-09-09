@@ -24,28 +24,30 @@ class Events {
                 
                     
                     for location in locations {
-                        var longtiude : Double = 11
-                        var latitude :Double = 11
                         
-                        if let lo = location["longtiude"] as? Double
-                        {
-                            longtiude = lo
+                        guard let longtiude = location["longitude"] as? Double else {
+                            
+                            print("unable to convert to Double line 33 Events")
+                            continue
                         }
                         
+                        guard let latitude = location["latitude"] as? Double else {
+                            
+                            print("unbale to convert to Double line 39 Events")
+                            continue
+                            
                         }
-                        if let la = location["latitude"] as? Double{
-                            latitude = la
-                        }
-                
-                print(longtiude)
-                print(latitude)
                         
-//                        
-//                       Events.append( Event(name: "HH", startDate: "HH" , endDate: "HH", longtiude: longtiude, latitude: latitude ))
-//                
+                        
+       
+            
+            
+                        
+                       Events.append( Event(name: "HH", startDate: "HH" , endDate: "HH", longtiude: longtiude, latitude: latitude ))
                 }
-        }
-        }
+            
+        
+            }}
         catch let error as NSError {
             print("Error parsing results: \(error.localizedDescription)")
         }
