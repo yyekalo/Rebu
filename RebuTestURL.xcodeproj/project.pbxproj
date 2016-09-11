@@ -18,6 +18,7 @@
 		4BF71EFB1D7ED6C20023BCF7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF71EFA1D7ED6C20023BCF7 /* Event.swift */; };
 		4BF71EFD1D7EDA580023BCF7 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF71EFC1D7EDA580023BCF7 /* Time.swift */; };
 		4BF71EFF1D7EE0230023BCF7 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF71EFE1D7EE0230023BCF7 /* Events.swift */; };
+		4BF71F011D8548CA0023BCF7 /* site.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF71F001D8548CA0023BCF7 /* site.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		4BF71EFA1D7ED6C20023BCF7 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		4BF71EFC1D7EDA580023BCF7 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		4BF71EFE1D7EE0230023BCF7 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		4BF71F001D8548CA0023BCF7 /* site.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = site.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				4BF71EC71D7ADBDE0023BCF7 /* AppDelegate.swift */,
 				4BF71EC91D7ADBDE0023BCF7 /* ViewController.swift */,
+				4BF71F001D8548CA0023BCF7 /* site.swift */,
 				4BF71EFE1D7EE0230023BCF7 /* Events.swift */,
 				4BF71EFA1D7ED6C20023BCF7 /* Event.swift */,
 				4BF71EFC1D7EDA580023BCF7 /* Time.swift */,
@@ -276,6 +279,7 @@
 				4BF71EFD1D7EDA580023BCF7 /* Time.swift in Sources */,
 				4BF71ECA1D7ADBDE0023BCF7 /* ViewController.swift in Sources */,
 				4BF71EC81D7ADBDE0023BCF7 /* AppDelegate.swift in Sources */,
+				4BF71F011D8548CA0023BCF7 /* site.swift in Sources */,
 				4BF71ED01D7ADBDE0023BCF7 /* RebuTestURL.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
