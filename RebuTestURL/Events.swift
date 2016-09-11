@@ -12,6 +12,7 @@ import Foundation
 class Events {
     
     var Events = [Event]()
+    var datas : AnyObject? = nil
     
     func updateEvents(data: NSData?){
         
@@ -43,7 +44,7 @@ class Events {
             
             
                         
-                       Events.append( Event(name: "HH", startDate: "HH" , endDate: "HH", longtiude: longtiude, latitude: latitude ))
+                       Events.append( Event(name: nil , startDate: nil  , endDate: nil , longtiude: longtiude, latitude: latitude ))
                 }
             
         
@@ -88,6 +89,8 @@ class Events {
         
         dataTask?.resume()
 }
+    
+    
 
 
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class ViewController: UIViewController {
     
@@ -14,11 +15,20 @@ class ViewController: UIViewController {
     
     var events = Events()
     
+     @IBOutlet var MapView: MKMapView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let intialLocation = CLLocation(latitude: (events.Events[6].latitude! as CLLocationDegrees), longitude: (events.Events[6].longtiude! as CLLocationDegrees))
       
+        let distance : CLLocationDistance = 1000
+        
+        let region = MKCoordinateRegionMakeWithDistance(intialLocation.coordinate,
+            distance * 2.0, distance * 2.0)
+        
+        MapView.setRegion(region, animated: true)
         
     }
 
@@ -29,6 +39,8 @@ class ViewController: UIViewController {
     
    
     @IBOutlet var TextField: UITextView!
+    
+   
     
     
     @IBAction func Run(sender: UIButton) {
@@ -46,7 +58,10 @@ class ViewController: UIViewController {
         for event in events.Events{
             
             self.TextField.text = self.TextField.text + String(event.longtiude) + "What"
+            
         }
+        
+      
         
         
     }
